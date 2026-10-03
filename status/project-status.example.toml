@@ -1,0 +1,112 @@
+schema_version = 1
+
+[identity]
+project = "Perfect Example"
+repository = "Perfect-Foundations/perfect-example"
+status_source = "project-status.toml"
+last_updated = "2026-10-03"
+
+[lifecycle]
+stage = "architecture"
+health = "on-track"
+current_milestone = "M0"
+current_milestone_name = "Architecture"
+current_focus = "Close architecture decisions before implementation."
+next_gate = "M0 Architecture Freeze Candidate"
+
+[progress]
+overall_percent = 12
+architecture_percent = 60
+core_implementation_percent = 0
+extended_capability_percent = 0
+verification_percent = 0
+distro_ecosystem_percent = 0
+qualification_percent = 0
+release_readiness_percent = 0
+default_grade_readiness_percent = 10
+
+[progress.weights]
+architecture = 20
+core_implementation = 25
+extended_capability = 15
+verification = 15
+distro_ecosystem = 10
+qualification = 10
+release_readiness = 5
+
+[work]
+blocking_issues = 0
+critical_blockers = 0
+pending_architecture_decisions = 8
+known_risks = 0
+
+[release]
+version = "unreleased"
+target_version = "TBD"
+release_status = "unreleased"
+msrv = "TBD"
+license = "TBD"
+
+[engineering]
+ci_health = "not-configured"
+audit_status = "not-started"
+qualification_status = "not-started"
+cargo_package = "not-tested"
+offline_build = "not-tested"
+docs_rs = "not-published"
+crates_io = "not-published"
+no_std = "target-where-practical"
+unsafe_policy = "prefer-safe-rust"
+ffi_policy = "optional-isolated"
+
+[architecture]
+completed = [
+  "purpose-and-scope",
+  "explicit-non-goals",
+  "users-and-use-cases",
+  "project-blueprint",
+  "capability-map",
+  "candidate-core-abstractions",
+  "candidate-algorithms",
+  "candidate-error-model",
+  "verification-strategy",
+  "benchmark-plan",
+  "risk-register",
+  "adoption-and-distro-requirements",
+]
+pending = [
+  "canonical-representation-final",
+  "public-api-draft-reviewed",
+  "feature-and-dependency-plan-final",
+  "msrv-final",
+  "target-matrix-final",
+  "no-std-policy-final",
+  "unsafe-policy-final",
+  "architecture-decision-review-complete",
+]
+
+[default_grade]
+completed = [
+  "project-design-dossier",
+  "family-adoption-and-release-standards-linked",
+]
+pending = [
+  "stable-semantic-contract",
+  "critical-correctness-blockers-zero",
+  "independent-reference-qualification",
+  "msrv-and-target-matrix",
+  "offline-packaged-build",
+  "dependency-license-advisory-review",
+  "no-undocumented-native-network-build-behavior",
+  "api-and-semantic-semver-policy",
+  "representative-performance-evidence",
+  "resource-behavior-documented",
+  "fuzz-property-mutation-evidence",
+  "unsafe-ffi-review",
+  "docs-rs-crates-io-release-quality",
+  "perfect-qualification",
+  "serious-downstream-integration",
+  "security-handling",
+  "maintenance-and-release-process",
+  "distro-packaging-note",
+]
