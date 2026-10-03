@@ -219,6 +219,11 @@ Perfectπ remains under **[DrTomLLC/perfect-pi](https://github.com/DrTomLLC/perf
 | [Repository Lifecycle](docs/REPOSITORY-LIFECYCLE.md) | Reserved → architecture → implementation → stable |
 | [Decisions](docs/DECISIONS.md) | Preserved founding decisions |
 | [Presentation Standard](docs/PRESENTATION-STANDARD.md) | Visual and information standard for family repository pages |
+| [Adoption Standard](docs/ADOPTION-STANDARD.md) | Criteria for becoming a credible default foundational Rust choice |
+| [Distro Readiness](docs/DISTRO-READINESS.md) | Linux/offline/reproducible packaging requirements |
+| [API Stability](docs/API-STABILITY.md) | Source and semantic compatibility policy |
+| [Release Quality Gates](docs/RELEASE-QUALITY-GATES.md) | Evidence gates from architecture through stable release |
+| [Supply-Chain Security](docs/SUPPLY-CHAIN-SECURITY.md) | Dependency, build-script, unsafe-code, and provenance policy |
 
 ---
 
