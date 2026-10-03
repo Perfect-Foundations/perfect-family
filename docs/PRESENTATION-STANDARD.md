@@ -18,7 +18,7 @@ Planned crate repositories should normally include:
 8. **Goals**;
 9. **Planned capability map**;
 10. **Where this becomes useful**;
-11. **Place in the Perfect family** with a small Mermaid diagram;
+11. **Place in the Perfect family** using native GitHub Markdown/table presentation;
 12. provisional upstream/downstream relationships;
 13. **Design questions to settle**;
 14. **Explicit non-goals**;
@@ -69,7 +69,7 @@ Prefer:
 - short paragraphs;
 - tables for dense metadata;
 - bullets for scannability;
-- Mermaid for architecture/lifecycle flows;
+- native GitHub Markdown tables/flows for architecture and lifecycle relationships;
 - horizontal rules only for major visual breaks.
 
 Avoid:
@@ -140,6 +140,20 @@ Include:
 
 ## 6. Family navigation
 
+### Design-record navigation
+
+Every planned/active crate README should make the durable design records easy to reach:
+
+- Project Blueprint;
+- live `project-status.toml`;
+- Architecture Decision Records;
+- Requirements index;
+- Traceability matrix.
+
+The README remains the front door; these records hold the implementation-starting detail and architectural history.
+
+
+
 Every project README should make it easy to reach:
 
 - `perfect-family`;
@@ -151,7 +165,7 @@ Specialist relationships should also be linked once public, but links must not f
 ## 7. Accessibility and maintainability
 
 - Meaningful text must not exist only inside images.
-- Mermaid diagrams should supplement prose, not replace it.
+- Do not depend on Mermaid/rich-display rendering for required information; use native Markdown so core content renders reliably.
 - Avoid relying on color alone.
 - Keep badge alt text meaningful.
 - Use standard GitHub Markdown/HTML that renders reliably.
