@@ -262,3 +262,30 @@ The initial common baseline is:
 The common percentages are expected at this moment because every planned crate has completed the same documentation/architecture-dossier gates and none has begun production implementation. They should diverge naturally once individual projects advance.
 
 Perfectπ is deliberately excluded from this rollout until its protected transfer milestone. Its existing repository and development process remain untouched.
+
+
+## Portfolio synchronization tool
+
+The repository README/blueprint synchronization is automatic through GitHub Actions.
+
+The organization-level Perfect Family Project requires broader Project write permission than an ordinary repository `GITHUB_TOKEN`. For that reason, portfolio synchronization is performed by the authorized maintainer tool:
+
+`tools/sync_project_status.py`
+
+It:
+
+1. reads all organization repositories except the three support repositories;
+2. parses each crate's authoritative `project-status.toml`;
+3. reads all Project fields and all Project items with explicit pagination limits;
+4. creates a crate Project row if one does not exist;
+5. synchronizes numeric progress/readiness values;
+6. synchronizes milestone, next gate, MSRV, target version, phase, visibility, CI, audit, qualification, and release states;
+7. leaves Domain, Layer, and Priority under the Project's architectural/management control.
+
+Run a no-write validation first:
+
+`python tools/sync_project_status.py --dry-run`
+
+Then run without `--dry-run` from an authenticated `gh` session that has permission to edit the Perfect Foundations organization Project.
+
+The tool was dry-run validated against all 40 crate status records on October 3, 2026.
