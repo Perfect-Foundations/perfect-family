@@ -224,6 +224,9 @@ Perfectπ remains under **[DrTomLLC/perfect-pi](https://github.com/DrTomLLC/perf
 | [Scope Boundaries](docs/SCOPE-BOUNDARIES.md) | What is intentionally not being built |
 | [Repository Lifecycle](docs/REPOSITORY-LIFECYCLE.md) | Reserved → architecture → implementation → stable |
 | [Decisions](docs/DECISIONS.md) | Preserved founding decisions |
+| [Glossary & Terminology](docs/GLOSSARY.md) | Canonical meanings for guarantees, status, evidence, compatibility, and architecture terms |
+| [ADR Standard](docs/ADR-STANDARD.md) | Durable architecture decision-record rules and required fields |
+| [Requirements & Traceability](docs/REQUIREMENTS-TRACEABILITY.md) | Requirement identity, status, and Requirement → Design → Implementation → Evidence chain |
 | [Presentation Standard](docs/PRESENTATION-STANDARD.md) | Visual and information standard for family repository pages |
 | [Status System](docs/STATUS-SYSTEM.md) | Gate-based live progress, readiness, health, and synchronization rules |
 | [Adoption Standard](docs/ADOPTION-STANDARD.md) | Criteria for becoming a credible default foundational Rust choice |
