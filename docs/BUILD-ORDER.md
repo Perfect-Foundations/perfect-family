@@ -1,0 +1,72 @@
+# Build Order
+
+This is the **recommended implementation sequence**, not a mandatory dependency chain.
+
+## Phase 0 — family infrastructure
+- perfect-family
+- perfect-qualification
+- organization standards
+- Perfectπ remains under DrTomLLC until complete and in service
+
+## Phase 1 — numeric kernel
+1. perfect-numeric
+2. perfect-arithmetic
+3. perfect-rational
+4. perfect-float
+5. perfect-decimal
+
+## Phase 2 — core mathematics
+6. perfect-algebra
+7. perfect-number-theory
+8. perfect-math
+9. perfect-complex
+10. perfect-interval
+11. perfect-polynomial
+12. perfect-special-functions
+13. perfect-calculus
+14. perfect-differential-equations
+15. perfect-geometry
+
+## Phase 3 — probability, information, optimization, and signals
+16. perfect-probability
+17. perfect-statistics
+18. perfect-information-theory
+19. perfect-error-correction
+20. perfect-optimization
+21. perfect-signal
+
+## Phase 4 — engineering foundations
+22. perfect-units
+23. perfect-uncertainty
+24. perfect-mechanics
+25. perfect-estimation
+26. perfect-control
+
+## Phase 5 — quantum branch
+27. perfect-quantum-information
+28. perfect-quantum-circuits
+29. perfect-quantum-simulation
+30. perfect-quantum-compilation
+31. perfect-quantum-error-correction
+
+## Phase 6 — applied foundational domains
+32. perfect-finance
+33. perfect-meteorology
+34. perfect-navigation
+35. perfect-gnss
+36. perfect-biosignal
+
+## Phase 7 — representation, evidence, and authoritative data
+37. perfect-wire
+38. perfect-evidence
+39. perfect-codata
+40. perfect-constants
+
+## Existing specialist
+41. Perfectπ / perfect-pi
+
+Perfectπ is developed independently and may be consumed wherever π is genuinely required.
+
+## Important
+
+The sequence may change after architecture audits. A project may begin earlier when doing so uncovers requirements needed by a lower layer. Any such change must preserve the family dependency rules.
