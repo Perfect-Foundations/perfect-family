@@ -68,3 +68,23 @@ Every public crate must document:
 - platform/target support;
 - FFI/runtime requirements, if any;
 - security or safety considerations where relevant.
+
+
+## Ecosystem and distribution-grade adoption target
+
+Perfect Foundations projects are intended to mature into infrastructure that can credibly be chosen as a default dependency by Rust applications and packaged by Linux distributions.
+
+That target requires more than algorithmic correctness. Mature crates must also address:
+
+- source/API and semantic stability;
+- offline, source-first, reproducible packaging;
+- no hidden network access in builds;
+- minimal and auditable dependencies;
+- documented MSRV and target support;
+- additive feature discipline;
+- crates.io/docs.rs quality;
+- cross-compilation;
+- supply-chain and build-script review;
+- predictable maintenance and release processes.
+
+The family does **not** claim present endorsement by the Rust project or any Linux distribution. “Default-grade” is an internal readiness bar that must be earned with evidence. See [ADOPTION-STANDARD.md](ADOPTION-STANDARD.md), [DISTRO-READINESS.md](DISTRO-READINESS.md), and [RELEASE-QUALITY-GATES.md](RELEASE-QUALITY-GATES.md).
