@@ -170,6 +170,31 @@ A new member should satisfy at least one of these:
 
 ---
 
+## Default-grade ecosystem target
+
+Perfect Foundations is being designed for more than local application use. The mature target is a family of crates that Rust developers, operating-system/distribution maintainers, and infrastructure projects can choose confidently as foundational dependencies.
+
+A crate does **not** reach that bar merely by having a good API or passing unit tests. Default-grade readiness requires:
+
+- stable source and semantic contracts;
+- offline/reproducible Cargo packaging;
+- no hidden build-time network access;
+- minimal, auditable dependencies;
+- documented MSRV and target support;
+- cross-compilation;
+- appropriate `no_std` support;
+- supply-chain and unsafe-code review;
+- independent correctness/reference evidence;
+- representative performance/resource evidence;
+- docs.rs/crates.io-quality documentation;
+- cross-family qualification where applicable.
+
+See [Adoption Standard](docs/ADOPTION-STANDARD.md), [Distro Readiness](docs/DISTRO-READINESS.md), [API Stability](docs/API-STABILITY.md), [Release Quality Gates](docs/RELEASE-QUALITY-GATES.md), and [Supply-Chain Security](docs/SUPPLY-CHAIN-SECURITY.md).
+
+This is an engineering objective, not a current claim of official Rust or Linux-distribution endorsement.
+
+---
+
 ## Family-wide engineering bar
 
 | Area | Direction |
