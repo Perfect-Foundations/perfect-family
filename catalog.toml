@@ -1,0 +1,337 @@
+schema_version = 1
+family = "Perfect Foundations"
+canonical_family_members = 41
+planned_new_members = 40
+existing_members = 1
+authoritative_repository = "https://github.com/Perfect-Foundations/perfect-family"
+
+# Status values in this initial catalog are planning states, not release claims.
+
+[[project]]
+name = "Perfect Numeric"
+repository = "perfect-numeric"
+phase = 1
+status = "reserved"
+visibility = "private"
+purpose = "Deterministic numeric semantics, rounding, conversions, precision, and loss handling."
+
+[[project]]
+name = "Perfect Arithmetic"
+repository = "perfect-arithmetic"
+phase = 1
+status = "reserved"
+visibility = "private"
+purpose = "Exact wide and arbitrary-precision arithmetic infrastructure."
+
+[[project]]
+name = "Perfect Rational"
+repository = "perfect-rational"
+phase = 1
+status = "reserved"
+visibility = "private"
+purpose = "Canonical exact rational arithmetic and conversions."
+
+[[project]]
+name = "Perfect Float"
+repository = "perfect-float"
+phase = 1
+status = "reserved"
+visibility = "private"
+purpose = "Arbitrary-precision binary floating-point arithmetic with explicit precision and rounding."
+
+[[project]]
+name = "Perfect Decimal"
+repository = "perfect-decimal"
+phase = 1
+status = "reserved"
+visibility = "private"
+purpose = "Exact decimal arithmetic with preserved scale and precision."
+
+[[project]]
+name = "Perfect Algebra"
+repository = "perfect-algebra"
+phase = 2
+status = "reserved"
+visibility = "private"
+purpose = "Foundational algebraic structures, finite fields, modules, extensions, and exact algebra."
+
+[[project]]
+name = "Perfect Number Theory"
+repository = "perfect-number-theory"
+phase = 2
+status = "reserved"
+visibility = "private"
+purpose = "Prime, modular, divisibility, residue, factorization, Diophantine, and number-theoretic algorithms."
+
+[[project]]
+name = "Perfect Math"
+repository = "perfect-math"
+phase = 2
+status = "reserved"
+visibility = "private"
+purpose = "Correctly-rounded deterministic elementary mathematics, including trigonometry."
+
+[[project]]
+name = "Perfect Complex"
+repository = "perfect-complex"
+phase = 2
+status = "reserved"
+visibility = "private"
+purpose = "Deterministic complex arithmetic across supported numeric backends."
+
+[[project]]
+name = "Perfect Interval"
+repository = "perfect-interval"
+phase = 2
+status = "reserved"
+visibility = "private"
+purpose = "Rigorous interval, ball, and complex-ball arithmetic with outward rounding."
+
+[[project]]
+name = "Perfect Polynomial"
+repository = "perfect-polynomial"
+phase = 2
+status = "reserved"
+visibility = "private"
+purpose = "Exact and certified polynomial arithmetic, evaluation, factorization, and root analysis."
+
+[[project]]
+name = "Perfect Special Functions"
+repository = "perfect-special-functions"
+phase = 2
+status = "reserved"
+visibility = "private"
+purpose = "Correct and rigorous scientific special functions."
+
+[[project]]
+name = "Perfect Calculus"
+repository = "perfect-calculus"
+phase = 2
+status = "reserved"
+visibility = "private"
+purpose = "Deterministic differentiation, integration, limits, and verified numerical calculus."
+
+[[project]]
+name = "Perfect Differential Equations"
+repository = "perfect-differential-equations"
+phase = 2
+status = "reserved"
+visibility = "private"
+purpose = "Deterministic ODE, DAE, and PDE foundations with error-bounded and verified solving."
+
+[[project]]
+name = "Perfect Geometry"
+repository = "perfect-geometry"
+phase = 2
+status = "reserved"
+visibility = "private"
+purpose = "Rigorous geometric primitives, predicates, measurements, intersections, and computational geometry."
+
+[[project]]
+name = "Perfect Probability"
+repository = "perfect-probability"
+phase = 3
+status = "reserved"
+visibility = "private"
+purpose = "Probability distributions, stochastic processes, and deterministic sampling contracts."
+
+[[project]]
+name = "Perfect Statistics"
+repository = "perfect-statistics"
+phase = 3
+status = "reserved"
+visibility = "private"
+purpose = "Statistical inference, regression, hypothesis testing, robust, streaming, and reproducible statistics."
+
+[[project]]
+name = "Perfect Information Theory"
+repository = "perfect-information-theory"
+phase = 3
+status = "reserved"
+visibility = "private"
+purpose = "Entropy, information measures, channels, capacity, and coding-theory foundations."
+
+[[project]]
+name = "Perfect Error Correction"
+repository = "perfect-error-correction"
+phase = 3
+status = "reserved"
+visibility = "private"
+purpose = "Classical forward-error-correction and coding infrastructure."
+
+[[project]]
+name = "Perfect Optimization"
+repository = "perfect-optimization"
+phase = 3
+status = "reserved"
+visibility = "private"
+purpose = "Deterministic unconstrained, constrained, convex, nonlinear, and global optimization infrastructure."
+
+[[project]]
+name = "Perfect Signal"
+repository = "perfect-signal"
+phase = 3
+status = "reserved"
+visibility = "private"
+purpose = "Deterministic signal-processing foundations for filtering, transforms, spectral analysis, and resampling."
+
+[[project]]
+name = "Perfect Units"
+repository = "perfect-units"
+phase = 4
+status = "reserved"
+visibility = "private"
+purpose = "Exact type-safe quantities, dimensions, and unit conversion."
+
+[[project]]
+name = "Perfect Uncertainty"
+repository = "perfect-uncertainty"
+phase = 4
+status = "reserved"
+visibility = "private"
+purpose = "Measurement uncertainty, covariance, and deterministic uncertainty propagation."
+
+[[project]]
+name = "Perfect Mechanics"
+repository = "perfect-mechanics"
+phase = 4
+status = "reserved"
+visibility = "private"
+purpose = "Rigid-body and multibody kinematics, dynamics, forces, constraints, and mechanics."
+
+[[project]]
+name = "Perfect Estimation"
+repository = "perfect-estimation"
+phase = 4
+status = "reserved"
+visibility = "private"
+purpose = "State estimation, filtering, smoothing, sensor fusion, and factor-graph infrastructure."
+
+[[project]]
+name = "Perfect Control"
+repository = "perfect-control"
+phase = 4
+status = "reserved"
+visibility = "private"
+purpose = "Deterministic feedback, state-space, optimal, robust, nonlinear, and predictive control."
+
+[[project]]
+name = "Perfect Quantum Information"
+repository = "perfect-quantum-information"
+phase = 5
+status = "reserved"
+visibility = "private"
+purpose = "Mathematical foundations for quantum states, operators, channels, measurements, and information."
+
+[[project]]
+name = "Perfect Quantum Circuits"
+repository = "perfect-quantum-circuits"
+phase = 5
+status = "reserved"
+visibility = "private"
+purpose = "Vendor-neutral quantum circuit representation and interchange."
+
+[[project]]
+name = "Perfect Quantum Simulation"
+repository = "perfect-quantum-simulation"
+phase = 5
+status = "reserved"
+visibility = "private"
+purpose = "Deterministic Pure-Rust quantum simulation backends."
+
+[[project]]
+name = "Perfect Quantum Compilation"
+repository = "perfect-quantum-compilation"
+phase = 5
+status = "reserved"
+visibility = "private"
+purpose = "Quantum circuit optimization, synthesis, decomposition, placement, routing, and lowering."
+
+[[project]]
+name = "Perfect Quantum Error Correction"
+repository = "perfect-quantum-error-correction"
+phase = 5
+status = "reserved"
+visibility = "private"
+purpose = "Quantum error-correction codes, decoding, stabilizers, and fault-tolerant infrastructure."
+
+[[project]]
+name = "Perfect Finance"
+repository = "perfect-finance"
+phase = 6
+status = "reserved"
+visibility = "private"
+purpose = "Deterministic quantitative-finance primitives, conventions, pricing, risk, and valuation."
+
+[[project]]
+name = "Perfect Meteorology"
+repository = "perfect-meteorology"
+phase = 6
+status = "reserved"
+visibility = "private"
+purpose = "Atmospheric physics and rigorous meteorological calculations."
+
+[[project]]
+name = "Perfect Navigation"
+repository = "perfect-navigation"
+phase = 6
+status = "reserved"
+visibility = "private"
+purpose = "Navigation mathematics, coordinate frames, inertial mechanization, geodesy, and guidance geometry."
+
+[[project]]
+name = "Perfect GNSS"
+repository = "perfect-gnss"
+phase = 6
+status = "reserved"
+visibility = "private"
+purpose = "High-assurance multi-constellation GNSS positioning, corrections, RTK, PPP, and integrity."
+
+[[project]]
+name = "Perfect Biosignal"
+repository = "perfect-biosignal"
+phase = 6
+status = "reserved"
+visibility = "private"
+purpose = "Physiological waveform representation, processing, analysis, calibration, and provenance."
+
+[[project]]
+name = "Perfect Wire"
+repository = "perfect-wire"
+phase = 7
+status = "reserved"
+visibility = "private"
+purpose = "Canonical deterministic bounded wire encoding for data whose exact bytes matter."
+
+[[project]]
+name = "Perfect Evidence"
+repository = "perfect-evidence"
+phase = 7
+status = "reserved"
+visibility = "private"
+purpose = "Immutable evidence, provenance, derivation, verification, and traceability primitives."
+
+[[project]]
+name = "Perfect CODATA"
+repository = "perfect-codata"
+phase = 7
+status = "reserved"
+visibility = "private"
+purpose = "Authoritative CODATA constants, revisions, uncertainties, correlations, and provenance."
+
+[[project]]
+name = "Perfect Constants"
+repository = "perfect-constants"
+phase = 7
+status = "reserved"
+visibility = "private"
+purpose = "Unified authoritative mathematical, physical, and scientific constants interface."
+
+[[project]]
+name = "PerfectPi"
+repository = "https://github.com/DrTomLLC/perfect-pi"
+phase = 0
+status = "existing-active"
+visibility = "public"
+purpose = "Universal, deterministic, resource-explicit pi infrastructure for Rust."
+transfer_policy = "Remain under DrTomLLC until complete and in service; transfer only after a dedicated readiness check."
