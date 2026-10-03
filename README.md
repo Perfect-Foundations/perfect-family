@@ -218,6 +218,7 @@ Perfectπ remains under **[DrTomLLC/perfect-pi](https://github.com/DrTomLLC/perf
 | [Scope Boundaries](docs/SCOPE-BOUNDARIES.md) | What is intentionally not being built |
 | [Repository Lifecycle](docs/REPOSITORY-LIFECYCLE.md) | Reserved → architecture → implementation → stable |
 | [Decisions](docs/DECISIONS.md) | Preserved founding decisions |
+| [Presentation Standard](docs/PRESENTATION-STANDARD.md) | Visual and information standard for family repository pages |
 
 ---
 
