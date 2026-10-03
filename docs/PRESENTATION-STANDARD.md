@@ -1,0 +1,164 @@
+# Perfect Foundations Presentation Standard
+
+This document defines the initial visual and information architecture for Perfect Foundations repository landing pages.
+
+The goal is **clarity + technical depth + visual coherence**. A README should be enjoyable to read without turning into a marketing page or implying features that do not exist.
+
+## 1. Required landing-page structure
+
+Planned crate repositories should normally include:
+
+1. centered project title;
+2. one-sentence technical tagline;
+3. restrained status/language/family/license badges;
+4. **Vision**;
+5. explicit current-status disclaimer;
+6. **At a glance** table;
+7. **Why this exists**;
+8. **Goals**;
+9. **Planned capability map**;
+10. **Where this becomes useful**;
+11. **Place in the Perfect family** with a small Mermaid diagram;
+12. provisional upstream/downstream relationships;
+13. **Design questions to settle**;
+14. **Explicit non-goals**;
+15. **Quality bar**;
+16. visual **Roadmap**;
+17. family navigation links.
+
+Public/mature repositories may replace planning language with real implementation, compatibility, examples, API, benchmarks, release, and evidence sections as they become true.
+
+## 2. Truthfulness rule
+
+A beautiful README must never make the repository look more implemented than it is.
+
+Use explicit lifecycle language:
+
+- Reserved
+- Architecture planning
+- Implementation
+- Hardening
+- Qualification
+- Prerelease
+- Stable
+- Maintenance
+
+Planned capability sections must say they are planned.
+
+Badges must represent current facts, not desired future states.
+
+## 3. Visual language
+
+### Color direction
+
+The family uses a restrained technical palette in static badges:
+
+- cyan/teal for family identity and primary information;
+- slate/graphite for status/architecture;
+- Rust orange/brown for language;
+- muted gray for undecided metadata such as license/MSRV.
+
+Do not turn READMEs into a rainbow of decorative badges.
+
+### Layout
+
+Prefer:
+
+- centered hero only at the top;
+- normal left-aligned technical content below;
+- short paragraphs;
+- tables for dense metadata;
+- bullets for scannability;
+- Mermaid for architecture/lifecycle flows;
+- horizontal rules only for major visual breaks.
+
+Avoid:
+
+- giant ASCII art;
+- dozens of badges;
+- animated GIFs;
+- meaningless “enterprise-grade / blazing-fast / revolutionary” claims;
+- large decorative images that push engineering information below the fold.
+
+## 4. Technical depth standard
+
+Every project page should answer:
+
+- What exact foundational problem is being solved?
+- Why is a separate crate justified?
+- What is in scope?
+- What is deliberately out of scope?
+- What existing Rust/non-Rust work should be reused or compared?
+- What lower Perfect layers may be needed?
+- Who benefits from the crate?
+- What design questions remain unresolved?
+- What evidence will be required before release?
+- What would make the implementation fail its stated mission?
+
+## 5. Maturity evolution
+
+### Reserved / architecture
+
+Focus on purpose, intended capabilities, boundaries, design questions, and quality targets.
+
+### Implementation
+
+Add:
+
+- current supported feature table;
+- examples;
+- API/design notes;
+- current limitations;
+- build/test instructions.
+
+### Hardening / qualification
+
+Add:
+
+- benchmark results;
+- reference comparisons;
+- fuzz/mutation results;
+- target matrix;
+- MSRV;
+- feature matrix;
+- known limitations;
+- qualification evidence links.
+
+### Stable
+
+Lead with what exists rather than what is planned.
+
+Include:
+
+- installation;
+- minimal example;
+- supported contract/version;
+- docs.rs/crates.io links;
+- compatibility;
+- changelog/release policy;
+- evidence/benchmark summaries.
+
+## 6. Family navigation
+
+Every project README should make it easy to reach:
+
+- `perfect-family`;
+- `perfect-qualification`;
+- the Perfect Family GitHub Project.
+
+Specialist relationships should also be linked once public, but links must not falsely imply a dependency.
+
+## 7. Accessibility and maintainability
+
+- Meaningful text must not exist only inside images.
+- Mermaid diagrams should supplement prose, not replace it.
+- Avoid relying on color alone.
+- Keep badge alt text meaningful.
+- Use standard GitHub Markdown/HTML that renders reliably.
+- Favor structures that can be updated mechanically across the family when standards change.
+
+## 8. The standard itself may evolve
+
+This is the initial family presentation system.
+
+Changes should improve readability, factual precision, or maintenance—not merely add decoration.
