@@ -13,18 +13,20 @@ Planned crate repositories should normally include:
 3. restrained status/language/family/license badges;
 4. **Vision**;
 5. explicit current-status disclaimer;
-6. **At a glance** table;
-7. **Why this exists**;
-8. **Goals**;
-9. **Planned capability map**;
-10. **Where this becomes useful**;
-11. **Place in the Perfect family** using native GitHub Markdown/table presentation;
-12. provisional upstream/downstream relationships;
-13. **Design questions to settle**;
-14. **Explicit non-goals**;
-15. **Quality bar**;
-16. visual **Roadmap**;
-17. family navigation links.
+6. authoritative **Live project status** dashboard;
+7. **At a glance** table;
+8. **Why this exists**;
+9. **Goals**;
+10. **Planned capability map**;
+11. **Where this becomes useful**;
+12. **Place in the Perfect family** using native GitHub Markdown/table presentation;
+13. provisional upstream/downstream relationships;
+14. **Design questions to settle**;
+15. **Explicit non-goals**;
+16. **Quality bar**;
+17. visual **Roadmap**;
+18. **Design dossier** with Blueprint, ADRs, requirements, traceability, and family-standard links;
+19. family navigation links.
 
 Public/mature repositories may replace planning language with real implementation, compatibility, examples, API, benchmarks, release, and evidence sections as they become true.
 
