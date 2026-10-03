@@ -74,7 +74,9 @@ Perfectπ remains under `DrTomLLC/perfect-pi` until it is complete and in servic
 
 ## Authoritative supporting documents
 
+- [Machine-readable family catalog](catalog.toml)
 - [Architecture](docs/ARCHITECTURE.md)
+- [Provisional dependency map](docs/DEPENDENCY-MAP.md)
 - [Build order and phases](docs/BUILD-ORDER.md)
 - [Engineering standard](docs/ENGINEERING-STANDARD.md)
 - [Reuse and dependency policy](docs/REUSE-POLICY.md)
