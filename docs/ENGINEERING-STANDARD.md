@@ -88,3 +88,20 @@ That target requires more than algorithmic correctness. Mature crates must also 
 - predictable maintenance and release processes.
 
 The family does **not** claim present endorsement by the Rust project or any Linux distribution. “Default-grade” is an internal readiness bar that must be earned with evidence. See [ADOPTION-STANDARD.md](ADOPTION-STANDARD.md), [DISTRO-READINESS.md](DISTRO-READINESS.md), and [RELEASE-QUALITY-GATES.md](RELEASE-QUALITY-GATES.md).
+
+
+## Architecture decisions and traceability
+
+Every planned/active crate maintains durable design records.
+
+Material architectural choices must be recorded as Architecture Decision Records under `docs/decisions/` according to [ADR-STANDARD.md](ADR-STANDARD.md).
+
+Projects must also maintain:
+- `docs/requirements/README.md` for stable requirement identities and records;
+- `docs/TRACEABILITY.md` for the Requirement → ADR/design → Implementation → Verification evidence → Qualification/release-gate chain.
+
+Architecture work is not complete merely because a design conversation occurred. Decisions that materially define representation, semantics, public API, dependencies, MSRV, target policy, `no_std`, unsafe/FFI boundaries, canonical formats, source authority, or compatibility must survive as repository records.
+
+Requirements must not silently drift to match implementation after the fact. Changes are recorded and traced.
+
+Canonical vocabulary for terms such as exact, correctly rounded, rigorous enclosure, deterministic, reproducible, canonical, verified, qualified, and default-grade is defined in [GLOSSARY.md](GLOSSARY.md).
