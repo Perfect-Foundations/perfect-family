@@ -119,37 +119,18 @@ Organization-support repositories such as `.github`, `perfect-family`, and `perf
 
 ## Architectural shape
 
-```mermaid
-flowchart TB
-  N[Perfect Numeric] --> A[Perfect Arithmetic]
-  A --> R[Perfect Rational]
-  A --> F[Perfect Float]
-  A --> D[Perfect Decimal]
-
-  R --> M[Perfect Math]
-  F --> M
-  D --> M
-
-  M --> C[Perfect Complex]
-  M --> I[Perfect Interval]
-  M --> ALG[Algebra / Number Theory / Polynomial]
-  I --> CALC[Calculus / Differential Equations]
-  ALG --> CALC
-
-  CALC --> ENG[Optimization / Mechanics / Estimation / Control]
-  M --> PROB[Probability / Statistics / Information]
-  C --> QUANT[Quantum Foundations]
-  ENG --> DOM[Finance / Meteorology / Navigation / GNSS / Biosignal]
-  PROB --> DOM
-
-  DOM --> W[Perfect Wire]
-  W --> E[Perfect Evidence]
-  E --> CD[Perfect CODATA]
-  CD --> CONST[Perfect Constants]
-
-  PI[Perfectπ] -. π where genuinely needed .-> M
-  PI -. π constants .-> CONST
-```
+| Architectural layer | Primary flow |
+|---|---|
+| **Numeric kernel** | Perfect Numeric → Perfect Arithmetic → Perfect Rational / Float / Decimal |
+| **Core mathematics** | Numeric foundations → Perfect Math → Complex / Interval / Algebra / Number Theory / Polynomial |
+| **Analysis** | Interval + Algebra/Polynomial → Calculus / Differential Equations |
+| **Probability & information** | Math → Probability / Statistics / Information Theory |
+| **Engineering** | Calculus + Geometry + Probability → Optimization / Mechanics / Estimation / Control |
+| **Quantum** | Complex + Math + Probability → Quantum Information / Circuits / Simulation / Compilation / QEC |
+| **Applied foundations** | Engineering + Probability → Finance / Meteorology / Navigation / GNSS / Biosignal |
+| **Representation & evidence** | Applied/domain values → Perfect Wire → Perfect Evidence |
+| **Authoritative data** | Evidence + measurement foundations → Perfect CODATA → Perfect Constants |
+| **Perfectπ** | Specialist source for π-dependent mathematics and π constants; never a general utility dependency |
 
 **Important:** this is a conceptual map, not a final Cargo dependency graph.
 
@@ -254,16 +235,8 @@ Perfectπ remains under **[DrTomLLC/perfect-pi](https://github.com/DrTomLLC/perf
 
 ## Current lifecycle
 
-```mermaid
-flowchart LR
-  R[Reserved] --> A[Architecture]
-  A --> I[Implementation]
-  I --> H[Hardening]
-  H --> Q[Qualification]
-  Q --> RC[Prerelease / RC]
-  RC --> S[Stable]
-  S --> M[Maintenance]
-```
+| **Reserved** | → | **Architecture** | → | **Implementation** | → | **Hardening** | → | **Qualification** | → | **Prerelease / RC** | → | **Stable** | → | **Maintenance** |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 
 The 40 new project repositories are currently **reserved / architecture planning**.
 
