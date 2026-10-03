@@ -162,3 +162,25 @@ Specialist relationships should also be linked once public, but links must not f
 This is the initial family presentation system.
 
 Changes should improve readability, factual precision, or maintenance—not merely add decoration.
+
+
+## 9. Live status presentation
+
+Every planned or active Perfect crate must maintain an authoritative root-level `project-status.toml`.
+
+The README dashboard should surface, at minimum:
+
+- lifecycle and health;
+- current milestone and next gate;
+- overall weighted progress;
+- architecture, implementation, verification, distro, qualification, and release progress;
+- default-grade readiness;
+- blocker counts;
+- current design-question count;
+- CI health;
+- MSRV, license, release state, and last qualified revision when available;
+- expandable current gate accounting and project-specific design questions.
+
+Progress bars must use native Markdown/text and must not depend on Mermaid or another rich-display renderer.
+
+The detailed status-scoring contract is owned by [STATUS-SYSTEM.md](STATUS-SYSTEM.md).
