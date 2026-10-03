@@ -50,7 +50,7 @@ class Field:
 def load_fields() -> dict[str, Field]:
     raw = gh(
         "project", "field-list", str(PROJECT_NUMBER),
-        "--owner", OWNER, "--format", "json",
+        "--owner", OWNER, "--limit", "100", "--format", "json",
         json_output=True,
     )
     out: dict[str, Field] = {}
