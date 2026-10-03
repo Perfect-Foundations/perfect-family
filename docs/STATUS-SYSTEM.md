@@ -170,3 +170,95 @@ A 100% value means every gate in that dimension is complete.
 **100% overall** is reserved for a released project whose applicable architecture, implementation, extended scope, verification, distro/ecosystem, qualification, and release gates are all complete.
 
 Stable maintenance does not reset the score; regressions or newly discovered release blockers may lower readiness/health until corrected.
+
+
+## Automatic README synchronization
+
+Every planned crate has:
+
+- `project-status.toml` — authoritative machine-readable state;
+- `.github/workflows/live-status.yml` — repository-local trigger;
+- the shared reusable workflow in `perfect-family/.github/workflows/status-sync.yml`;
+- the shared renderer in `perfect-family/tools/render_status.py`.
+
+When `project-status.toml` changes on the default branch:
+
+1. the repository calls the shared workflow;
+2. the renderer parses the TOML with the Python standard library;
+3. it validates gate counts, dimension percentages, weights, overall percentage, default-grade percentage, and update date;
+4. it regenerates the README live dashboard;
+5. it regenerates the Project Blueprint current-state summary;
+6. `git diff --check` verifies the generated Markdown;
+7. only changed generated documentation is committed back by `github-actions[bot]`.
+
+The visible blocks are bounded by generated-section comments after the first synchronization. Content outside those blocks is not owned by the renderer.
+
+The workflow does not award progress. It only renders values that are already supported by completed gates in the authoritative status file.
+
+### Validation failures
+
+The workflow fails rather than publishing misleading status when:
+
+- progress weights do not total 100;
+- a dimension percentage is outside 0–100;
+- architecture percentage disagrees with architecture gate counts;
+- default-grade readiness disagrees with readiness gate counts;
+- weighted overall percentage disagrees with the dimension scores;
+- required status keys are missing;
+- `last_updated` is in the future.
+
+This turns the progress display into a checked engineering artifact rather than a manually drawn bar.
+
+## Perfect Family Project portfolio fields
+
+The central GitHub Project carries a synchronized management view for every planned crate.
+
+Live-status portfolio fields include:
+
+- Overall Progress
+- Architecture Progress
+- Implementation Progress
+- Verification Progress
+- Distro Readiness
+- Default-Grade Readiness
+- Current Milestone
+- Next Gate
+- Pending Decisions
+- Blocking Issues
+- CI Health
+
+These sit beside the existing Domain, Layer, Priority, Phase, Target Version, MSRV, Visibility, Audit Status, Qualification Status, and Release Status fields.
+
+The repository status file remains authoritative if the board and repository ever disagree.
+
+## Current initial family baseline — October 3, 2026
+
+All 40 planned crates currently have:
+
+- an authoritative `project-status.toml`;
+- a detailed README live-status dashboard;
+- a Project Blueprint current-state summary;
+- a GitHub Project status row;
+- the live-status synchronization workflow.
+
+The initial common baseline is:
+
+| Measure | Initial value |
+|---|---:|
+| Lifecycle | Architecture |
+| Milestone | M0 — Architecture |
+| Overall lifecycle | 12% |
+| Architecture | 60% |
+| Core implementation | 0% |
+| Extended capability | 0% |
+| Verification & hardening | 0% |
+| Distro & ecosystem | 0% |
+| Qualification | 0% |
+| Release readiness | 0% |
+| Default-grade readiness | 10% |
+| Blocking issues | 0 |
+| CI health | Not configured |
+
+The common percentages are expected at this moment because every planned crate has completed the same documentation/architecture-dossier gates and none has begun production implementation. They should diverge naturally once individual projects advance.
+
+Perfectπ is deliberately excluded from this rollout until its protected transfer milestone. Its existing repository and development process remain untouched.
