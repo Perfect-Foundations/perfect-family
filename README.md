@@ -234,6 +234,41 @@ Perfectπ remains under **[DrTomLLC/perfect-pi](https://github.com/DrTomLLC/perf
 
 ---
 
+## Current family live status
+
+Every one of the **40 planned Perfect crates** now has an authoritative machine-readable status record, a detailed README dashboard, a Project Blueprint current-state summary, and a synchronized row in the Perfect Family GitHub Project.
+
+| Family status | Current value |
+|---|---:|
+| Planned crates with status source | **40 / 40** |
+| README live dashboards | **40 / 40** |
+| Blueprint current-state summaries | **40 / 40** |
+| GitHub Project crate rows | **40 / 40** |
+| Live-status workflows | **40 / 40** |
+| Current lifecycle | **Architecture** |
+| Current milestone | **M0 — Architecture** |
+| Baseline overall progress | **12%** |
+| Baseline architecture progress | **60%** |
+| Baseline implementation | **0%** |
+| Baseline verification | **0%** |
+| Baseline distro readiness | **0%** |
+| Baseline default-grade readiness | **10%** |
+| Current critical blockers | **0 recorded** |
+
+These values are gate-based, not activity-based. Commits, lines of code, PR count, and time spent do not create progress.
+
+### How the live status works
+
+`project-status.toml` is authoritative for each crate. A shared GitHub Actions renderer validates the score math and regenerates the visible README and blueprint status sections whenever that status source changes.
+
+The central [Perfect Family Project](https://github.com/orgs/Perfect-Foundations/projects/1) provides the portfolio view with progress, readiness, phase, milestone, blocker, CI, audit, qualification, MSRV, visibility, and release fields.
+
+See the [Status System](docs/STATUS-SYSTEM.md) for scoring rules, gate definitions, automation, staleness rules, and synchronization behavior.
+
+> Perfectπ remains outside this status rollout while it is protected in its existing repository until complete and in service.
+
+---
+
 ## Current lifecycle
 
 | **Reserved** | → | **Architecture** | → | **Implementation** | → | **Hardening** | → | **Qualification** | → | **Prerelease / RC** | → | **Stable** | → | **Maintenance** |
