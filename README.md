@@ -235,6 +235,7 @@ Perfectπ remains under **[DrTomLLC/perfect-pi](https://github.com/DrTomLLC/perf
 | [Distro Readiness](docs/DISTRO-READINESS.md) | Linux/offline/reproducible packaging requirements |
 | [API Stability](docs/API-STABILITY.md) | Source and semantic compatibility policy |
 | [Release Quality Gates](docs/RELEASE-QUALITY-GATES.md) | Evidence gates from architecture through stable release |
+| [crates.io Readiness](docs/CRATES-IO-READINESS.md) | Private package readiness, Perfect-to-Perfect dependency bridging, and final bottom-up registry publication |
 | [Supply-Chain Security](docs/SUPPLY-CHAIN-SECURITY.md) | Dependency, build-script, unsafe-code, and provenance policy |
 
 ---

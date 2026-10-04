@@ -15,11 +15,15 @@ Edge cases, fuzzing, mutation testing, sanitizers, performance, documentation, a
 ## Qualification
 Crate-specific evidence and cross-family integration are verified, including `perfect-qualification` where applicable.
 
-## Prerelease
-Public API is usable but still allowed to change according to documented SemVer expectations.
+## Prerelease / private release candidate
+Public API is usable but still allowed to change according to documented SemVer
+expectations. Implemented Rust crates should already be crates.io-package-ready
+here while retaining `publish = false`; license/publication/public-visibility
+decisions may remain deferred until explicit open-release authorization.
 
 ## Stable
-The crate reaches a documented stable contract.
+The crate reaches a documented stable contract. Stable private-candidate status
+does not itself imply crates.io publication or public repository visibility.
 
 ## Maintenance
 Compatibility, defects, standards updates, performance, and carefully scoped features continue.

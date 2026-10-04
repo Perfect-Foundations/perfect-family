@@ -17,14 +17,28 @@ If a project cannot meet that baseline, the exception must be documented in the 
 
 ## Cargo packaging
 
-Before public release, every crate should verify:
+Crates.io/package readiness is maintained **while the crate is still private**;
+actual registry publication is a separate final gate.
 
+Every implemented crate should verify:
+
+- `publish = false` remains set during private retention;
 - `cargo package --list` contains only intended files;
 - `cargo package` succeeds from a clean checkout;
 - the produced crate builds from the packaged tarball;
+- the produced crate builds offline from a populated Cargo source cache;
 - required generated tables/data are included or reproducibly generated without the network;
 - licenses/notices required by dependencies or source datasets are included;
-- metadata includes repository, documentation, description, categories, keywords, license expression, and rust-version once decided.
+- metadata includes repository, homepage where appropriate, documentation,
+  description, categories, keywords, readme, and rust-version;
+- the project license may remain intentionally undecided until open-release
+  authorization, but that deferral must be explicit rather than guessed;
+- private Perfect production dependencies include an exact Git revision plus a
+  registry-compatible version requirement;
+- the generated package manifest is inspected to ensure future registry
+  consumers will not require the private Git source.
+
+See [crates.io Readiness and Publication Policy](CRATES-IO-READINESS.md).
 
 ## Offline build
 

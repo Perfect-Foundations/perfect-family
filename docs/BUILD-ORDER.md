@@ -70,3 +70,31 @@ Perfectπ is developed independently and may be consumed wherever π is genuinel
 ## Important
 
 The sequence may change after architecture audits. A project may begin earlier when doing so uncovers requirements needed by a lower layer. Any such change must preserve the family dependency rules.
+
+## Public crates.io publication order
+
+Implementation order is **not** the registry publication order.
+
+All Perfect crates remain privately consumable through exact Git revisions while
+the family is being built and qualified. crates.io publication is deferred until
+explicit open-release authorization.
+
+When publication begins, crates are published **bottom-up by the actual
+production dependency DAG**:
+
+1. publish an already-qualified crate whose production Perfect dependencies are
+   all already present on crates.io;
+2. verify the crates.io artifact and docs.rs output;
+3. update/requalify the next dependent release manifest against the released
+   registry dependency;
+4. continue upward until the intended family release set is published.
+
+For the initial numeric chain, if the approved dependency map remains:
+
+`perfect-rational -> perfect-arithmetic -> perfect-numeric`
+
+then registry publication is:
+
+`perfect-numeric -> perfect-arithmetic -> perfect-rational`.
+
+See [crates.io Readiness and Publication Policy](CRATES-IO-READINESS.md).
