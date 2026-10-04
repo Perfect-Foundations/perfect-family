@@ -236,6 +236,7 @@ Perfectπ remains under **[DrTomLLC/perfect-pi](https://github.com/DrTomLLC/perf
 | [API Stability](docs/API-STABILITY.md) | Source and semantic compatibility policy |
 | [Release Quality Gates](docs/RELEASE-QUALITY-GATES.md) | Evidence gates from architecture through stable release |
 | [crates.io Readiness](docs/CRATES-IO-READINESS.md) | Private package readiness, Perfect-to-Perfect dependency bridging, and final bottom-up registry publication |
+| [crates.io Name Audit](docs/CRATES-IO-NAME-AUDIT.md) | Point-in-time availability audit for all planned registry package names |
 | [Supply-Chain Security](docs/SUPPLY-CHAIN-SECURITY.md) | Dependency, build-script, unsafe-code, and provenance policy |
 
 ---
