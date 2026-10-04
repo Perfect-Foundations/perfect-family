@@ -126,6 +126,7 @@ Before M0 Architecture can close, requirements should exist for the material dec
 - dependency/FFI/unsafe boundaries;
 - interoperability;
 - verification/reference strategy;
+- performance/resource benchmark strategy and relevant competitor baselines;
 - distro/offline packaging;
 - security/supply-chain requirements.
 

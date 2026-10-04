@@ -57,6 +57,11 @@ established. Projects should actively seek algorithmic, representation, and
 implementation improvements in latency, throughput, scaling, memory, allocation,
 stack, code/data size, dependency weight, startup cost, and target suitability.
 
+Performance/resource work should follow the
+[Benchmarking Standard](BENCHMARKING-STANDARD.md). Benchmarking is the default
+decision instrument for optimization; material choices should be measured rather
+than guessed.
+
 Performance/resource work should:
 
 - preserve the contract;

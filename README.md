@@ -227,6 +227,7 @@ Perfectπ remains under **[DrTomLLC/perfect-pi](https://github.com/DrTomLLC/perf
 | [Build Order](docs/BUILD-ORDER.md) | Recommended implementation phases |
 | [Engineering Standard](docs/ENGINEERING-STANDARD.md) | Family quality rules |
 | [Excellence Doctrine](docs/EXCELLENCE-DOCTRINE.md) | Best-in-class optimization, custom algorithms/metadata, competitor baselines, footprint, embedded, and claim discipline |
+| [Benchmarking Standard](docs/BENCHMARKING-STANDARD.md) | Measurement-first optimization, retained baselines, competitor/resource comparisons, threshold tuning, and regression evidence |
 | [Reuse Policy](docs/REUSE-POLICY.md) | When to depend, copy/adapt, custom-build, or extract shared machinery |
 | [FFI Policy](docs/FFI-POLICY.md) | Foreign-runtime boundaries |
 | [Scope Boundaries](docs/SCOPE-BOUNDARIES.md) | What is intentionally not being built |

@@ -39,6 +39,7 @@ Perfect Foundations releases should be evidence-driven.
 - source/data provenance recorded.
 
 ## Gate R5 — Performance/resource excellence ready
+- the project follows the family [Benchmarking Standard](BENCHMARKING-STANDARD.md);
 - representative benchmarks recorded;
 - strongest relevant competitor/reference baselines identified;
 - no known catastrophic regressions;

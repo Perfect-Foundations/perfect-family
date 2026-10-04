@@ -192,6 +192,15 @@ dependency.
 
 ## 8. Measurement requirements
 
+Benchmarking is the default optimization decision instrument. Algorithm,
+representation, threshold, dependency, allocation, feature-layout, caching,
+parallelism, acceleration, and footprint decisions should be measured rather than
+guessed whenever the difference is material.
+
+See the [Benchmarking Standard](BENCHMARKING-STANDARD.md) for corpus design,
+baseline selection, environment capture, statistical discipline, multi-objective
+comparison, and regression policy.
+
 Performance/resource work should measure the dimensions material to the crate,
 including where applicable:
 
