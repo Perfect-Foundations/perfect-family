@@ -37,6 +37,8 @@ Recommended categories:
 - `SEM` — semantic/numerical guarantees
 - `ERR` — errors/failure behavior
 - `PERF` — performance/resource requirements
+- `ALG` — algorithm selection, complexity, dispatch, certification, or independent-reference requirements
+- `META` — typed metadata, provenance linkage, algorithm/configuration identity, or schema/version requirements
 - `PORT` — target/platform/no_std/MSRV requirements
 - `PKG` — Cargo/distro/offline packaging
 - `SEC` — security/supply-chain/unsafe/FFI

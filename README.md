@@ -17,7 +17,7 @@
 
 ## Mission
 
-Perfect Foundations exists to create **reusable, sharply bounded, high-assurance Rust infrastructure** beneath complex software.
+Perfect Foundations exists to create **reusable, sharply bounded, high-assurance Rust infrastructure** beneath complex software—and to push each foundation as far as evidence permits on correctness, accuracy, speed, resource efficiency, binary footprint, portability, embedded suitability, security, reproducibility, and maintainability.
 
 The family is intentionally:
 
@@ -191,6 +191,11 @@ This is an engineering objective, not a current claim of official Rust or Linux-
 | `no_std` | Supported where the domain reasonably permits |
 | FFI | Optional, isolated, documented, justified |
 | Verification | Independent references + domain-appropriate hardening |
+| Algorithms | Reuse proven work first; custom-build when evidence shows a materially stronger result |
+| Metadata | Typed/domain-owned; generalized only after proven cross-crate reuse |
+| Performance | Compete against strongest relevant alternatives under equivalent semantics |
+| Footprint | Minimize allocations, memory, stack, code/data size, and dependency weight |
+| Embedded | Smallest supported target pays only for capabilities it uses |
 | Dependencies | Minimal and materially justified |
 | Architecture | Independent crates forming a DAG |
 
@@ -221,7 +226,8 @@ Perfectπ remains under **[DrTomLLC/perfect-pi](https://github.com/DrTomLLC/perf
 | [Dependency Map](docs/DEPENDENCY-MAP.md) | Provisional relationship map |
 | [Build Order](docs/BUILD-ORDER.md) | Recommended implementation phases |
 | [Engineering Standard](docs/ENGINEERING-STANDARD.md) | Family quality rules |
-| [Reuse Policy](docs/REUSE-POLICY.md) | When to depend, copy/adapt, or reuse methods |
+| [Excellence Doctrine](docs/EXCELLENCE-DOCTRINE.md) | Best-in-class optimization, custom algorithms/metadata, competitor baselines, footprint, embedded, and claim discipline |
+| [Reuse Policy](docs/REUSE-POLICY.md) | When to depend, copy/adapt, custom-build, or extract shared machinery |
 | [FFI Policy](docs/FFI-POLICY.md) | Foreign-runtime boundaries |
 | [Scope Boundaries](docs/SCOPE-BOUNDARIES.md) | What is intentionally not being built |
 | [Repository Lifecycle](docs/REPOSITORY-LIFECYCLE.md) | Reserved → architecture → implementation → stable |
@@ -287,6 +293,6 @@ The 40 new project repositories are currently **reserved / architecture planning
 
 <div align="center">
 
-### The goal is not more crates. The goal is better foundations.
+### The goal is not more crates. The goal is the strongest foundations we can actually prove.
 
 </div>

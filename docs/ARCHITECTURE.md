@@ -26,6 +26,22 @@ Finance, Meteorology, Navigation, GNSS, Biosignal, Units, and Uncertainty consum
 ### Representation and evidence
 `perfect-wire` provides canonical deterministic representation. `perfect-evidence` provides provenance/derivation/verification primitives. `perfect-codata` represents CODATA-specific authoritative data. `perfect-constants` aggregates authoritative constants without duplicating specialist implementations.
 
+## Algorithms and metadata
+
+Algorithms are owned by the specialist crate whose domain contract they implement
+unless proven cross-crate reuse justifies extraction. Custom algorithms are
+expected when they materially improve correctness, determinism, performance,
+resource use, portability, embedded suitability, dependency weight, security, or
+verification. A generic algorithm dumping ground is prohibited.
+
+Metadata follows the same ownership rule. Domain-specific metadata stays with the
+domain owner. Cross-domain provenance/derivation/canonical representation should
+prefer intentional owners such as Perfect Evidence and Perfect Wire. A new shared
+metadata primitive/crate is justified only after a stable independent contract
+and real reuse are demonstrated.
+
+See [Perfect Foundations Excellence Doctrine](EXCELLENCE-DOCTRINE.md).
+
 ## Perfectπ
 
 Perfectπ is a specialist crate. Where another family crate genuinely needs π, it may consume Perfectπ.

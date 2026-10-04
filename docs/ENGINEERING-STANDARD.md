@@ -1,6 +1,8 @@
 # Engineering Standard
 
-This document records the initial family-wide engineering direction. Individual crates may strengthen these rules when their domain requires it.
+This document records the family-wide engineering direction. Individual crates may strengthen these rules when their domain requires it.
+
+The governing optimization objective is defined in the [Perfect Foundations Excellence Doctrine](EXCELLENCE-DOCTRINE.md): correctness and explicit semantics are hard constraints; every other material dimension should be improved as far as evidence, domain requirements, and honest tradeoffs permit.
 
 ## Correctness
 
@@ -48,13 +50,27 @@ Use the strongest practical combination of:
 - benchmark regression checks;
 - external/reference implementation comparison.
 
-## Performance
+## Performance and resource excellence
 
-Optimization follows correctness. Performance work should:
+Optimization follows correctness, but it is not optional once the contract is
+established. Projects should actively seek algorithmic, representation, and
+implementation improvements in latency, throughput, scaling, memory, allocation,
+stack, code/data size, dependency weight, startup cost, and target suitability.
+
+Performance/resource work should:
+
 - preserve the contract;
-- include reproducible benchmarks;
+- compare against the strongest relevant alternatives;
+- include reproducible benchmarks and retained versions/configurations;
 - distinguish algorithmic improvements from machine-specific tuning;
-- keep specialized acceleration optional when a portable core is expected.
+- measure binary/code/data/stack/allocation behavior where material;
+- keep specialized acceleration optional when a portable core is expected;
+- prefer a measured Pareto-efficient default rather than an inherited historical default;
+- record known material regressions/tradeoffs rather than hiding them.
+
+Custom algorithms are encouraged when they materially improve the approved
+contract and are backed by independent verification. See
+[EXCELLENCE-DOCTRINE.md](EXCELLENCE-DOCTRINE.md).
 
 ## Documentation
 

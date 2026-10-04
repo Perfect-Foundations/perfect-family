@@ -38,11 +38,18 @@ Perfect Foundations releases should be evidence-driven.
 - foreign/native dependencies documented;
 - source/data provenance recorded.
 
-## Gate R5 — Performance ready
+## Gate R5 — Performance/resource excellence ready
 - representative benchmarks recorded;
+- strongest relevant competitor/reference baselines identified;
 - no known catastrophic regressions;
-- resource behavior documented;
-- comparisons to relevant reference implementations available.
+- algorithmic scaling documented where material;
+- memory/allocation/stack behavior documented where material;
+- executable/code/data footprint measured where material;
+- embedded/constrained-target resource evidence retained where claimed;
+- comparisons use equivalent semantic/precision contracts;
+- known material disadvantages are either corrected, justified by a stronger contract/tradeoff, or explicitly deferred with impact recorded;
+- custom algorithms/representations are considered where they can materially improve the result;
+- benchmark methodology distinguishes stable enforceable regression metrics from noisy host timing.
 
 ## Gate R6 — Qualification ready
 - applicable Perfect Qualification matrix passes;

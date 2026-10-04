@@ -20,8 +20,15 @@ A mature Perfect crate should be easy to choose when a maintainer asks:
 
 ## Readiness dimensions
 
-### Technical correctness
+### Technical correctness and best-in-class engineering
 The crate must have a precise public contract, independent verification, known-answer/reference tests where possible, fuzz/property tests where useful, and no known high-severity correctness defects.
+
+Mature crates should also retain evidence showing how they compare with the
+strongest relevant alternatives on the dimensions material to their domain:
+accuracy/correctness, performance, scaling, memory/allocation behavior,
+code/data footprint, portability/embedded suitability, dependency weight, and
+security/failure surface. A weaker metric may be accepted only as an explicit
+tradeoff for a stronger contract or documented design decision.
 
 ### API stability
 Public types and semantics must be intentionally designed before 1.0. Breaking changes after 1.0 require normal SemVer discipline and migration documentation.
