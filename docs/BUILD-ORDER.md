@@ -16,8 +16,8 @@ This is the **recommended implementation sequence**, not a mandatory dependency 
 5. perfect-decimal
 
 ## Phase 2 — core mathematics
-6. perfect-algebra
-7. perfect-number-theory
+6. perfect-number-theory
+7. perfect-algebra
 8. perfect-math
 9. perfect-complex
 10. perfect-interval
@@ -70,6 +70,8 @@ Perfectπ is developed independently and may be consumed wherever π is genuinel
 ## Important
 
 The sequence may change after architecture audits. A project may begin earlier when doing so uncovers requirements needed by a lower layer. Any such change must preserve the family dependency rules.
+
+The 2026-10-05 Algebra/Number Theory M0 architecture audit changed Phase 2 so `perfect-number-theory` precedes `perfect-algebra`. Number Theory owns validated prime-modulus/primality and general modular arithmetic; Algebra consumes those capabilities and owns finite-field structure. This is an implementation-sequence correction driven by the actual production DAG, not a claim that either M1 implementation is complete.
 
 ## Public crates.io publication order
 

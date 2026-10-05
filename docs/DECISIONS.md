@@ -36,3 +36,17 @@ The 40 new crate names are reserved privately during initial planning so archite
 
 ## D-010 — Cross-family qualification
 `perfect-qualification` verifies compatibility, determinism, targets, MSRV, feature matrices, and integration across crate boundaries without owning production algorithms.
+
+
+## D-011 — Number Theory precedes Algebra in the finite-field dependency path
+
+The 2026-10-05 M0 architecture freezes resolve the relevant ownership boundary:
+
+- Perfect Arithmetic owns arbitrary-precision integer storage and basic arithmetic.
+- Perfect Number Theory owns general modular residues, inverse/CRT, and prime-status/proof semantics.
+- Perfect Algebra consumes those validated foundations and owns finite-field parents, elements, and extension-field structure.
+- Perfect Number Theory does not take a production dependency on Perfect Algebra for this lower core, avoiding a cycle.
+
+The recommended Phase 2 implementation sequence therefore places Perfect Number
+Theory before Perfect Algebra. Registry publication remains bottom-up by the
+actual qualified production dependency DAG.

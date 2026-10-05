@@ -14,8 +14,8 @@ It is not a lockfile and not a mandate. Dependencies are added only after crate-
 
 ## Algebra and core mathematics
 
-- Perfect Algebra: likely uses Arithmetic and Rational.
-- Perfect Number Theory: likely uses Arithmetic + Algebra; Rational where useful.
+- Perfect Number Theory: M0 freezes an M1 production dependency on Perfect Arithmetic only; it owns `Modulus`/`Residue`, inverse/CRT, primality status/proofs, and future general factorization.
+- Perfect Algebra: M0 freezes the downstream direction from Perfect Number Theory + Arithmetic; it consumes validated prime/modular foundations and owns finite-field parents/elements. It must not duplicate general primality/modular machinery.
 - Perfect Math: uses Numeric and supported numeric backends; may consume PerfectPi when pi is genuinely required.
 - Perfect Complex: likely uses Float + Math; other numeric backends only where sound.
 - Perfect Interval: likely uses Numeric + supported numeric backends + Math; Complex for complex balls.
@@ -64,6 +64,14 @@ It is not a lockfile and not a mandate. Dependencies are added only after crate-
 - Perfect Evidence: likely uses Wire and selected numeric/units/uncertainty representations.
 - Perfect CODATA: likely uses Decimal + Units + Uncertainty + Evidence + Wire as appropriate.
 - Perfect Constants: likely consumes PerfectPi + Perfect CODATA + Math/Decimal/Units/Uncertainty/Evidence as required.
+
+## Architecture-audit correction
+
+The 2026-10-05 M0 freezes for Perfect Number Theory and Perfect Algebra establish the relevant production path as:
+
+`perfect-arithmetic -> perfect-number-theory -> perfect-algebra`
+
+Perfect Number Theory must not depend on Perfect Algebra for its modular/primality core, and Perfect Algebra must not reimplement those Number Theory primitives. Higher layers such as Perfect Polynomial and Perfect Error Correction consume the appropriate specialist layers.
 
 ## Anti-coupling rules
 
