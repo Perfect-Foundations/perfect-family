@@ -17,6 +17,8 @@ Perfect Foundations releases should be evidence-driven.
 - feature/dependency model established.
 
 ## Gate R2 — Correctness ready
+- evidence follows the family [Claim Assurance Standard](CLAIM-ASSURANCE-STANDARD.md);
+- required checks are passing rather than skipped/unavailable/indeterminate;
 - unit/property tests pass;
 - independent reference tests exist where possible;
 - edge/pathological cases covered;
@@ -53,6 +55,7 @@ Perfect Foundations releases should be evidence-driven.
 - benchmark methodology distinguishes stable enforceable regression metrics from noisy host timing.
 
 ## Gate R6 — Qualification ready
+- qualification distinguishes verification from validation and records exact evidence scope;
 - applicable Perfect Qualification matrix passes;
 - cross-crate conversions/integration pass;
 - deterministic/canonical behaviors pass;
