@@ -26,3 +26,35 @@ They must not make Perfectπ a dependency merely to access unrelated implementat
 There will be no giant `perfect` umbrella runtime crate that enables all family members by default.
 
 Applications should depend only on the crates they need.
+
+
+## Provenance requirement
+
+Every material adaptation/generalization records enough provenance to answer:
+
+- source repository/project;
+- exact source revision and relevant artifact/file/algorithm when known;
+- what was copied, adapted, generalized, or only used as methodology;
+- destination owner and why that crate owns the generalized machinery;
+- semantic differences introduced by adaptation;
+- independent verification/oracle used after adaptation;
+- licensing/publication disposition when source and destination licensing differ.
+
+Common ownership or explicit permission to reuse does not remove this engineering record. Provenance is required for auditability, future maintenance, and independent qualification.
+
+The family-wide high-value source register is [Proven Reuse Register](PROVEN-REUSE-REGISTER.md).
+
+## Verification-transfer rule
+
+Evidence does not transfer automatically with code.
+
+A source implementation may be deeply verified and still require destination-specific verification because:
+
+- the public contract changed;
+- types/representations changed;
+- compiler/target/features changed;
+- algorithms were generalized;
+- dependencies/resources differ;
+- integration introduces new failure paths.
+
+Retain the source evidence as provenance and baseline context, then independently qualify the adapted destination contract.
