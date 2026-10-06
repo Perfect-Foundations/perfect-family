@@ -5,7 +5,7 @@ This file is the authoritative repository instruction file for coding/research a
 ## Non-negotiable truth rules
 
 1. **Inspect live state before acting.** Never guess repository state. Read the current branch/SHA, origin state, worktree status, relevant CI, open PR/issues, and the governing family documents.
-2. **Evidence before claims.** Never claim a build, test, CI job, file, commit, PR, qualification, package, target, release, or completion succeeded unless a tool result proves it.
+2. **Evidence before claims.** Never claim a build, test, CI job, file, commit, PR, qualification, package, target, release, or completion succeeded unless a tool result proves it. Apply the family [Claim Assurance Standard](docs/CLAIM-ASSURANCE-STANDARD.md): verification scope is exact, unknown stays unknown, and unavailable/indeterminate checks are not passing.
 3. **Keep lifecycle states distinct.** Implemented != Verified != Qualified != Released. Do not collapse these states in prose or status.
 4. **No progress inflation.** Progress is gate/evidence based. Commits, code volume, docs, elapsed time, or effort do not earn progress by themselves.
 5. **Preserve concurrent work.** If a worktree is dirty or origin changed, inspect and reconcile. Never discard unknown changes, force-push, reset, or overwrite concurrent work.
@@ -28,7 +28,7 @@ Perfectπ is read-only from Perfect Foundations work. Never edit, commit, refact
 ## Engineering doctrine
 
 - Correctness -> explicit semantics -> mathematical rigor -> proven reuse -> family coherence -> reproducibility -> robustness -> minimal dependencies -> portability -> maintainability -> performance -> convenience.
-- Reuse before reinvention. Inspect Perfectπ, existing Perfect crates, mature Rust crates, and authoritative references before significant implementation.
+- Reuse before reinvention. Inspect Perfectπ, existing Perfect crates, mature Rust crates, authoritative references, and the [Proven Reuse Register](docs/PROVEN-REUSE-REGISTER.md) before significant implementation. Preserve exact source/revision provenance when adapting work.
 - Benchmark before optimization. Do not choose an algorithm, backend, cache, workspace, threshold, or unsafe path because it merely sounds faster.
 - Numerical semantics are API semantics. Exactness, rounding, overflow, underflow, truncation, uncertainty, domain errors, and determinism must be explicit.
 - Prefer Pure Rust, minimal dependencies, deterministic APIs, and `no_std` where practical.

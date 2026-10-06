@@ -37,6 +37,8 @@ Where meaningful:
 
 ## Verification
 
+Verification claims follow the [Claim Assurance Standard](CLAIM-ASSURANCE-STANDARD.md). Verification and validation are distinct: conformance to a specified contract does not by itself establish fitness for every downstream use.
+
 Use the strongest practical combination of:
 - unit and property tests;
 - independent reference generators;
@@ -49,6 +51,8 @@ Use the strongest practical combination of:
 - reproducibility checks;
 - benchmark regression checks;
 - external/reference implementation comparison.
+
+Required checks that are skipped, unavailable, timed out, permission-blocked, runner-provisioning-failed, unsupported, or indeterminate are not passing. Self-generated fixtures and self-round-trips are useful but are not independent evidence unless independence is separately established.
 
 ## Performance and resource excellence
 

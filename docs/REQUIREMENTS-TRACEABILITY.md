@@ -141,6 +141,21 @@ Empty columns are acceptable before implementation; missing requirement identity
 
 ## Evidence rules
 
+Evidence and status claims follow the [Claim Assurance Standard](CLAIM-ASSURANCE-STANDARD.md).
+
+Verification evidence must identify enough scope to distinguish, where material:
+
+- exact subject revision;
+- requirement/property checked;
+- method/profile/oracle;
+- toolchain/target/features/environment;
+- corpus/fixtures/input identity;
+- pass/fail/inconclusive/error/not-run state;
+- retained artifact/source identity;
+- limitations and what the check does not prove.
+
+A green workflow, successful command, mock, self-round-trip, or generated fixture proves only its defined scope.
+
 A requirement may move to:
 
 ### Implemented
