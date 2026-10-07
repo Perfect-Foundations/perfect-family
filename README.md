@@ -229,6 +229,9 @@ Perfectπ remains under **[DrTomLLC/perfect-pi](https://github.com/DrTomLLC/perf
 | [Excellence Doctrine](docs/EXCELLENCE-DOCTRINE.md) | Best-in-class optimization, custom algorithms/metadata, competitor baselines, footprint, embedded, and claim discipline |
 | [Benchmarking Standard](docs/BENCHMARKING-STANDARD.md) | Measurement-first optimization, retained baselines, competitor/resource comparisons, threshold tuning, and regression evidence |
 | [Reuse Policy](docs/REUSE-POLICY.md) | When to depend, copy/adapt, custom-build, or extract shared machinery |
+| [Proven Reuse Register](docs/PROVEN-REUSE-REGISTER.md) | Revision-pinned reusable work from predecessor/reference projects |
+| [Proven Reuse Applicability Matrix](docs/PROVEN-REUSE-MATRIX.md) | Baseline LMES/Perfectπ applicability across all 40 planned crates |
+| [Historical Proven-Reuse Gate](docs/HISTORICAL-REUSE-GATE.md) | Mandatory M1/M3/M5/M6 reuse-disposition and defect-prevention control |
 | [FFI Policy](docs/FFI-POLICY.md) | Foreign-runtime boundaries |
 | [Scope Boundaries](docs/SCOPE-BOUNDARIES.md) | What is intentionally not being built |
 | [Repository Lifecycle](docs/REPOSITORY-LIFECYCLE.md) | Reserved → architecture → implementation → stable |
