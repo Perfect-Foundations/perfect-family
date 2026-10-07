@@ -2,7 +2,7 @@
 
 This register records high-value reusable work that may be adapted/generalized into Perfect Foundations while preserving source provenance and ownership boundaries.
 
-It is not a dependency list and it does not imply that every listed technique has already been implemented or qualified in the destination crate.
+It is not a dependency list and it does not imply that every listed technique has already been implemented or qualified in the destination crate. Mandatory review mechanics are defined by the [Historical Proven-Reuse Gate](HISTORICAL-REUSE-GATE.md); crate applicability is recorded in the [Proven Reuse Applicability Matrix](PROVEN-REUSE-MATRIX.md).
 
 ## Reuse rules
 
@@ -79,13 +79,35 @@ Key inspected artifacts:
 | Required-check unavailable/indeterminate != pass | Qualification/status/CI | Preserve explicit not-run/error/inconclusive states |
 | Supply-chain executable-input review | Family supply-chain standard | Apply to build scripts, proc macros, Actions, generators, containers |
 
+## Historical defect corpus
+
+The register also preserves defect classes already exposed by deep review so the family can prevent recurrence rather than rediscover them.
+
+### Perfectπ review lessons
+
+- precision-dependent certification failures can exist far beyond representative small-digit tests;
+- fuzz inputs/selectors must be proven to reach the intended deep arithmetic path;
+- caller/resource limit branches must be reachable and tested;
+- production and reference algorithms must remain materially independent;
+- performance evidence is accepted only with attached correctness/certification gates.
+
+### LMES review lessons
+
+- stale/contradictory authority text and parser/routing edge cases can create false-PASS assurance;
+- required-test isolation and fixture discovery are themselves verification concerns;
+- dependency direction, suppression controls, coverage scope, and reference integrity can drift unless explicitly checked;
+- mirrors, generated fixtures, or repeated AI assertions are not independent authority;
+- unavailable/indeterminate checks remain non-passing.
+
 ## Reuse review triggers
 
-A crate entering M1/M3/M5/M6 should review this register when relevant and record one of:
+M1/M3/M5/M6 reviews are mandatory where applicable under the [Historical Proven-Reuse Gate](HISTORICAL-REUSE-GATE.md). The allowed dispositions are:
 
-- reused/adapted with provenance;
-- evaluated and rejected with technical reason;
-- deferred with release impact;
-- not applicable.
+- REUSE_DEPENDENCY;
+- ADAPT_WITH_PROVENANCE;
+- REUSE_METHOD_ONLY;
+- EVALUATED_REJECTED;
+- DEFERRED_WITH_IMPACT;
+- NOT_APPLICABLE.
 
-The register itself does not force scope expansion or dependency addition.
+The register does not force scope expansion or dependency addition, and its existence does not award progress.
