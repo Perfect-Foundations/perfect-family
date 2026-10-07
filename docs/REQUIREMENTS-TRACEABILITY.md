@@ -90,6 +90,7 @@ Each requirement record should identify:
 - Qualification/release gate
 - Implementation references when known
 - Evidence references when known
+- Predecessor/reuse provenance and disposition when LMES, Perfectπ, or another proven source materially informs the requirement
 
 ## Good requirement properties
 
@@ -129,6 +130,12 @@ Before M0 Architecture can close, requirements should exist for the material dec
 - performance/resource benchmark strategy and relevant competitor baselines;
 - distro/offline packaging;
 - security/supply-chain requirements.
+
+## Historical reuse traceability
+
+At M1/M3/M5/M6, applicable predecessor work MUST be reviewed under the [Historical Proven-Reuse Gate](HISTORICAL-REUSE-GATE.md). A requirement/ADR influenced by LMES, Perfectπ, or another registered source records the exact source revision and one allowed reuse disposition. Adapted work receives destination-specific verification; copied/adapted machinery is not an independent oracle for itself.
+
+A missing required reuse disposition blocks new closure of the applicable milestone but does not itself award or subtract progress.
 
 ## Traceability matrix
 
