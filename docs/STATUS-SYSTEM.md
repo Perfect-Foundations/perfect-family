@@ -107,7 +107,7 @@ Initial planning repositories have completed only the documentation/standards pr
 
 `reserved → architecture → implementation → hardening → qualification → prerelease → stable → maintenance`
 
-A lifecycle state is not inferred from percentage alone. It changes only when its entry gate is satisfied.
+A lifecycle state is not inferred from percentage alone. It changes only when its entry gate is satisfied. Where M1/M3/M5/M6 applies, the [Historical Proven-Reuse Gate](HISTORICAL-REUSE-GATE.md) is part of milestone closure; the review itself earns no percentage.
 
 ## Health states
 

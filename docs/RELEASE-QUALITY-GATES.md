@@ -5,7 +5,7 @@ Perfect Foundations releases should be evidence-driven.
 ## Gate R0 — Architecture ready
 - purpose and boundaries documented;
 - core representations selected;
-- dependency/reuse audit complete;
+- dependency/reuse audit complete, including the applicable row in the [Proven Reuse Applicability Matrix](PROVEN-REUSE-MATRIX.md) and an initial [Historical Proven-Reuse Gate](HISTORICAL-REUSE-GATE.md) disposition;
 - verification strategy defined;
 - unresolved questions classified as blocking/non-blocking.
 
@@ -41,6 +41,7 @@ Perfect Foundations releases should be evidence-driven.
 - source/data provenance recorded.
 
 ## Gate R5 — Performance/resource excellence ready
+- M3/M5 historical-reuse review is current for algorithm, resource, fuzz/mutation, reproducibility, and measurement lessons;
 - the project follows the family [Benchmarking Standard](BENCHMARKING-STANDARD.md);
 - representative benchmarks recorded;
 - strongest relevant competitor/reference baselines identified;
@@ -55,6 +56,7 @@ Perfect Foundations releases should be evidence-driven.
 - benchmark methodology distinguishes stable enforceable regression metrics from noisy host timing.
 
 ## Gate R6 — Qualification ready
+- M1/M3/M5/M6 historical-reuse dispositions are complete or explicitly non-applicable, and adapted work has destination-specific independent evidence;
 - qualification distinguishes verification from validation and records exact evidence scope;
 - applicable Perfect Qualification matrix passes;
 - cross-crate conversions/integration pass;

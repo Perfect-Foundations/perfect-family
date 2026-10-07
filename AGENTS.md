@@ -28,7 +28,7 @@ Perfectπ is read-only from Perfect Foundations work. Never edit, commit, refact
 ## Engineering doctrine
 
 - Correctness -> explicit semantics -> mathematical rigor -> proven reuse -> family coherence -> reproducibility -> robustness -> minimal dependencies -> portability -> maintainability -> performance -> convenience.
-- Reuse before reinvention. Inspect Perfectπ, existing Perfect crates, mature Rust crates, authoritative references, and the [Proven Reuse Register](docs/PROVEN-REUSE-REGISTER.md) before significant implementation. Preserve exact source/revision provenance when adapting work.
+- Reuse before reinvention. Inspect Perfectπ, existing Perfect crates, mature Rust crates, authoritative references, the [Proven Reuse Register](docs/PROVEN-REUSE-REGISTER.md), the [Proven Reuse Applicability Matrix](docs/PROVEN-REUSE-MATRIX.md), and the [Historical Proven-Reuse Gate](docs/HISTORICAL-REUSE-GATE.md) before significant implementation. Preserve exact source/revision provenance when adapting work.
 - Benchmark before optimization. Do not choose an algorithm, backend, cache, workspace, threshold, or unsafe path because it merely sounds faster.
 - Numerical semantics are API semantics. Exactness, rounding, overflow, underflow, truncation, uncertainty, domain errors, and determinism must be explicit.
 - Prefer Pure Rust, minimal dependencies, deterministic APIs, and `no_std` where practical.
@@ -40,7 +40,7 @@ Perfectπ is read-only from Perfect Foundations work. Never edit, commit, refact
 Before substantial work:
 - fetch/prune origin and record repo, branch, HEAD, origin HEAD, and `git status`;
 - read the relevant Blueprint, requirements, ADRs, traceability, status, CI, issues/PRs, dependency map, and build order;
-- inspect reusable lower-layer/reference work;
+- inspect reusable lower-layer/reference work and record the required M1/M3/M5/M6 historical-reuse disposition when that checkpoint applies;
 - identify the actual requirement/root cause before editing.
 
 Before commit/push:
