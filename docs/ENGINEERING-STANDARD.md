@@ -54,6 +54,59 @@ Use the strongest practical combination of:
 
 Required checks that are skipped, unavailable, timed out, permission-blocked, runner-provisioning-failed, unsupported, or indeterminate are not passing. Self-generated fixtures and self-round-trips are useful but are not independent evidence unless independence is separately established.
 
+## Test environment fidelity and zero-cost-first execution
+
+Before buying CI minutes, runners, hardware, hosted VMs, or test services, use
+already-authorized free/local infrastructure when it can satisfy the actual
+requirement: native local operating systems, hardware-accelerated VMs, isolated
+containers, available physical machines, and independent emulation/reference
+testing. Never create costs, change billing limits, or publish private source
+merely to bypass a CI allowance without explicit authorization. Budget CI
+runs, suppress duplicate event triggers, and reuse exact-source evidence.
+
+**Execution method is part of verification evidence**, not an interchangeable
+implementation detail. Record the machine and hardware ISA, guest/container
+architecture, actual operating-system kernel and ABI, virtualization or emulator
+model/version, Rust toolchain, dependency/source SHAs, feature/target matrix,
+command, log, resource limits, and exit status. Distinguish:
+
+- **Native ISA execution:** tests run on physical CPU hardware of the required
+  instruction-set architecture, either directly or through hardware-assisted
+  virtualization on a same-ISA host. A VM can establish guest OS-specific
+  behavior when its guest kernel/ABI matches the requirement, but it does not
+  automatically establish bare-metal timing, peripheral, driver, GPU, or other
+  hardware-specific behavior.
+- **Container execution:** tests use the host/VM kernel and native ISA; a
+  container does not provide a new OS kernel or a different hardware ISA.
+  Windows/Linux containers and WSL must be identified by their actual kernel
+  and runtime semantics, not marketed as bare-metal equivalents.
+- **Foreign-ISA emulation:** QEMU user-mode or full-system emulation may execute
+  real target-ISA binaries and reveal functional/ABI defects. This is useful
+  *emulated execution*, not native CPU or native hardware qualification.
+  Identify user-mode versus system-mode, emulated OS/kernel limits, and
+  separately validate hardware-sensitive behavior when required.
+- **Cross-compilation:** produces a target artifact but does not execute that
+  target. Compilation success must not stand in for an execution requirement.
+- **Other OS virtualization:** use license-compliant, authorized environments
+  capable of running the required kernel and APIs; compatibility shims are not
+  assumed equivalent to the actual operating system. In particular, a macOS
+  VM is not a substitute for permitted Apple-hosted macOS execution unless
+  applicable platform and licensing constraints are met.
+
+A missing native target remains **BLOCKED/NOT-RUN** until matching evidence
+exists. Run useful alternative/emulated checks independently without upgrading
+the unavailable gate. A genuine native ARM64 CPU or hardware-accelerated VM on
+authorized ARM64 hardware can satisfy a native-ISA requirement if the specified
+OS/ABI and configuration are actually exercised; x86-hosted QEMU cannot.
+Use exact source and independent oracles to compare results across environments.
+
+Self-hosted CI executing repository code on a user's machine must be
+least-privilege and isolated: prefer single-use/ephemeral runners, pinned
+reviewed commits, restricted labels and triggers, minimal token permissions,
+resource limits, and no host worktree/credential/container-engine socket
+mounts. Never attach general untrusted pull-request code to a privileged
+long-lived local runner.
+
 ## Performance and resource excellence
 
 Optimization follows correctness, but it is not optional once the contract is
