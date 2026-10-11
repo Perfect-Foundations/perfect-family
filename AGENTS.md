@@ -17,13 +17,13 @@ Authority order:
 1. this repository's architecture/policy documents;
 2. each crate's `project-status.toml` for that crate's lifecycle/readiness state;
 3. `perfect-qualification` for cross-family qualification evidence;
-4. live `DrTomLLC/perfect-pi` for Perfectπ technical authority.
+4. live `Perfect-Foundations/perfect-pi` for Perfectπ technical authority.
 
 Do not invent a single family-wide percentage unless an authoritative family status model explicitly defines one.
 
 ## Perfectπ
 
-Perfectπ is read-only from Perfect Foundations work. Never edit, commit, refactor, fix, merge into, or open corrective PRs against `DrTomLLC/perfect-pi` unless the user explicitly changes that rule. Reuse/generalize its proven techniques where appropriate, preserving provenance.
+Perfectπ is an independent repository at `Perfect-Foundations/perfect-pi`. A family-repository task does not authorize changes to its implementation, merges, or releases; those actions require their own explicit owner authorization and exact-revision verification. Reuse/generalize its proven techniques where appropriate, preserving provenance.
 
 ## Engineering doctrine
 

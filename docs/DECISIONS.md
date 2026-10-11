@@ -50,3 +50,9 @@ The 2026-10-05 M0 architecture freezes resolve the relevant ownership boundary:
 The recommended Phase 2 implementation sequence therefore places Perfect Number
 Theory before Perfect Algebra. Registry publication remains bottom-up by the
 actual qualified production dependency DAG.
+
+## D-012 — Perfectπ organization transfer (2026-10-10)
+
+The owner explicitly approved moving the existing Perfectπ repository from `DrTomLLC/perfect-pi` into `Perfect-Foundations/perfect-pi`. This supersedes the location/timing restriction in D-002; D-002 is preserved as a historical decision. The repository was transferred, not recreated, retaining its GitHub identity, Git history, issues, and open pull request #13. The corrected PR head at transfer was `bdf7baacc180ac8a245d67b5b81fc7861d40339b` with completed 30/30 CI run #57.
+
+Transfer does **not** approve merging PR #13, publishing the crate, tagging a release, or widening the crate's specialist scope. Perfectπ remains an independent repository, not a monorepo member or umbrella dependency.

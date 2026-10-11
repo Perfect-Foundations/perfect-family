@@ -13,9 +13,9 @@ It is not a dependency list and it does not imply that every listed technique ha
 - User ownership/permission permits reuse but does not remove the engineering need for provenance, licensing clarity for eventual publication, independent validation, or semantic review.
 - A copied algorithm is not an independent oracle for itself.
 
-## DrTomLLC/perfect-pi — read-only technical authority
+## Perfect-Foundations/perfect-pi — read-only technical authority
 
-Repository: `DrTomLLC/perfect-pi`
+Repository: `Perfect-Foundations/perfect-pi`
 
 Protected rule: Perfectπ is read-only from Perfect Foundations.
 

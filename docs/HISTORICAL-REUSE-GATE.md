@@ -3,7 +3,7 @@
 Perfect Foundations is younger than two owner projects that already contain substantial independently reviewed engineering work:
 
 - **Lifetime Medical Evidence System (LMES)** — assurance, authority, evidence, traceability, verification-scope, negative-path, and failure-state discipline.
-- **Perfectπ / `DrTomLLC/perfect-pi`** — numerical semantics, certification, resource control, reproducibility, independent-oracle, fuzz/mutation, and measurement discipline.
+- **Perfectπ / `Perfect-Foundations/perfect-pi`** — numerical semantics, certification, resource control, reproducibility, independent-oracle, fuzz/mutation, and measurement discipline.
 
 The family MUST systematically evaluate that proven work before rediscovering the same defects.
 

@@ -115,7 +115,7 @@ Organization-support repositories such as `.github`, `perfect-family`, and `perf
 
 | Project | Repository | Core responsibility |
 |---|---|---|
-| Perfectπ | `DrTomLLC/perfect-pi` | Universal deterministic resource-explicit π infrastructure |
+| Perfectπ | `Perfect-Foundations/perfect-pi` | Universal deterministic resource-explicit π infrastructure |
 
 ---
 
@@ -213,7 +213,7 @@ Other family projects may:
 
 They must **not** make Perfectπ an unrelated utility dependency.
 
-Perfectπ remains under **[DrTomLLC/perfect-pi](https://github.com/DrTomLLC/perfect-pi)** until it is complete and in service.
+Perfectπ now lives in the independent **[Perfect-Foundations/perfect-pi](https://github.com/Perfect-Foundations/perfect-pi)** repository. Specialized-runtime PR #13 remains open; final audit, merge, and release are separate decisions.
 
 ---
 

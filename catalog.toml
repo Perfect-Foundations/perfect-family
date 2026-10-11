@@ -329,9 +329,9 @@ purpose = "Unified authoritative mathematical, physical, and scientific constant
 
 [[project]]
 name = "PerfectPi"
-repository = "https://github.com/DrTomLLC/perfect-pi"
+repository = "https://github.com/Perfect-Foundations/perfect-pi"
 phase = 0
 status = "existing-active"
 visibility = "public"
 purpose = "Universal, deterministic, resource-explicit pi infrastructure for Rust."
-transfer_policy = "Remain under DrTomLLC until complete and in service; transfer only after a dedicated readiness check."
+transfer_policy = "Transferred into Perfect-Foundations on 2026-10-10 with owner authorization, verified history, and PR continuity; merging and releasing remain separate decisions."

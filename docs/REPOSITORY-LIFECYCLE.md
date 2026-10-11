@@ -34,4 +34,4 @@ Reserved/planning repositories may remain private. Public visibility is an inten
 
 ## Perfectπ exception
 
-Perfectπ is already public and remains under `DrTomLLC` until it is complete and in service. Transfer to Perfect Foundations happens only after that milestone and after transfer-readiness checks.
+Perfectπ was already public and transferred to `Perfect-Foundations/perfect-pi` on 2026-10-10 with explicit owner authorization and verified Git history/PR continuity. Ownership transfer does not imply qualification, a merged PR #13, crate publication, or a release. See D-012 in DECISIONS.md.
